@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: orange;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+	font-size: 1.0rem;
+    text-transform: uppercase;
+    font-family: 'Prompt', sans-serif;
+}
+.nav-link:hover{
+    color: orange;
+	font-size: 120%;
+}
+#slider
+{
+	width: 80%;
+	}
+	
+#Slider
+{
+	
+	width: auto;
+	height: 240px;;
+}
+
+
+.fas{
+    font-size: 2.5rem;
+}
+
+.search{
+    height: 40px;
+    width:  80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    border: 2px solid rgb(248, 26, 92);
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background-color: rgb(248, 26, 92);
+    color: white;
+    font-weight: 700;
+    font-family: 'Prompt', sans-serif;
+}
+.checked {
+  color: orange;
+}
+.main h1{
+	color: powderblue;
+	text-align: center;
+    font-size: 4rem;
+    font-weight:400;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+	
+}
+.stretch {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -009 might work, too. */
+    width:100%;
+    height:100%;
+}
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background: rgb(248, 26, 92);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+	
+}
+.btn1:hover{
+    background: rgb(223, 11, 75);
+    transition: 0.5s;
+}
+.product p{
+    font-weight: bold;
+    color: black;
+}
+.card:hover{
+    box-shadow: 2px 3px 28px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 28px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 28px -10px rgba(0,0,0,0.75);
+  transition: 0.5s;
+  
+}
+.apple
+{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./img/copy\ copy.jpg)no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+.app h1{
+	position:relative;
+	left:50px;}
+
+
+.app p{
+  font-family:'Roboto', sans-serif;
+  position: absolute;
+  bottom: 0px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:200%;
+  padding: 20px;
+  
+  position:relative;
+  left:50px;
+  top:3px;
+}
+.apple .btn1{
+position:relative;
+	left:270px;
+	}
+
+
+.news{
+    background: black;
+    color: white;
+}
+.news input{
+    height: 45px;
+    width:55%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.news ::placeholder{
+    color: white;
+}
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: white;
+    color: black;
+    margin-left: -10px;
+    outline: none;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.news p{
+    margin: 0;
+}
+.fab{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}
+.fab:hover{
+    color: rgb(248, 26, 92);
+    transition: 0.5s;
+
+}
+
+#services
+{
+	background: black;
+	background-size: cover;
+	background-position: center;
+	color:#555!important;
+	background-attachment: fixed;
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+
+
+
+#services h1
+{
+	text-align: center;
+	color:#fff!important;
+	padding-bottom: 10px;
+}
+
+#services h1::after
+{
+	content: '';
+	background:#efefef;
+	display: block;
+	height:3px;
+	width:170px;
+	margin: 20px auto 5px;
+}
+#services h3
+{
+	font-weight: 400;
+	color: white;
+	margin: auto;
+}
+#services p
+{
+	font-weight: 400;
+	color: white;
+	margin: auto;
+	margin-top: 20px;
+}
+
+
+#services i
+{
+	
+	color: white;
+}
+.icon
+{
+	font-size:40px;
+	margin:20px auto;
+	padding: 20px;
+	height: 80px;
+	width:80px;
+	border:1px solid #fff;
+	border-radius:50%;
+}
+
+.services .col-md-4:hover{
+	background:orange;
+	cursor: pointer;
+	transition: 0.7s;
+	
+}
+li {
+ display: block;
+ transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  
+  z-index: 1;
+  
+}
+.dropdown-content a {
+  color: black;
+  padding: 5px 14px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+background-color: orange;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 170px;
+  height: 8px;
+  background: orange;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: orange;
+  margin-bottom:20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
