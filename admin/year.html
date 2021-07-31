@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Past Year Sales </title>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+     
+     
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Month', 'Products Sold'],
+          ['2014-01', 1527],
+          ['2014-02' ,1437],
+          ['2014-03',1411],
+          ['2014-04',1561],
+          ['2014-05',1615],
+          ['2014-06',1570],
+          ['2014-07',1576],
+          ['2014-08',1575],
+          ['2014-09',1472],
+          ['2014-10',1591],
+          ['2014-11',1469],
+          ['2014-12',1473],
+          ['2015-01',1797],
+          ['2015-02',1560],
+          ['2015-03',1722],
+          ['2015-04',1699],
+          ['2015-05',1793],
+          ['2015-06',1694],
+          ['2015-07',1724],
+          ['2015-08',1921],
+          ['2015-09',1587],
+          ['2015-10',1670],
+          ['2015-11',1785],
+          ['2015-12',1536]
+          
+        ]);
+
+        var options = {
+          title: 'Past Year Sales of food products',
+          backgroundColor: 'transparent',
+          fontSize: 14,
+          hAxis: {title: 'Month & Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {title: 'Number of food products sold',minValue: 0},
+          curveType: 'function',
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Month', 'Products Sold'],
+          ['2014-01', 1527],
+          ['2014-02' ,1437],
+          ['2014-03',1411],
+          ['2014-04',1561],
+          ['2014-05',1615],
+          ['2014-06',1570],
+          ['2014-07',1576],
+          ['2014-08',1575],
+          ['2014-09',1472],
+          ['2014-10',1591],
+          ['2014-11',1469],
+          ['2014-12',1473],
+          ['2015-01',1797],
+          ['2015-02',1560],
+          ['2015-03',1722],
+          ['2015-04',1699],
+          ['2015-05',1793],
+          ['2015-06',1694],
+          ['2015-07',1724],
+          ['2015-08',1921],
+          ['2015-09',1587],
+          ['2015-10',1670],
+          ['2015-11',1785],
+          ['2015-12',1536]
+        ]);
+
+        var options = {
+          title: 'Past Year Sales of food products',
+          backgroundColor:'transparent',
+          fontSize: 14,
+          hAxis: {title: 'Month & Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {title: 'Number of food products sold',minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+     <script type="text/javascript">
+       google.load("visualization", "1.1", {packages:["bar"]});
+       google.setOnLoadCallback(drawChart);
+       function drawChart() {
+         var data = google.visualization.arrayToDataTable([
+         ['Month', ' Number of Products Sold'],
+               ['2014-01', 1527],
+               ['2014-02' ,1437],
+               ['2014-03',1411],
+               ['2014-04',1561],
+               ['2014-05',1615],
+               ['2014-06',1570],
+               ['2014-07',1576],
+               ['2014-08',1575],
+               ['2014-09',1472],
+               ['2014-10',1591],
+               ['2014-11',1469],
+               ['2014-12',1473],
+               ['2015-01',1797],
+              ['2015-02',1560],
+              ['2015-03',1722],
+              ['2015-04',1699],
+              ['2015-05',1793],
+              ['2015-06',1694],
+              ['2015-07',1724],
+              ['2015-08',1921],
+              ['2015-09',1587],
+              ['2015-10',1670],
+              ['2015-11',1785],
+              ['2015-12',1536]
+         ]);
+         var options = {
+             
+             backgroundColor: 'transparent',
+             fontSize: 14,
+        chart: {
+          title: 'Past Year Sales of food products',  
+        },
+        'chartArea': {
+         'backgroundColor': {'fill': 'transparent','opacity': 100},
+      }
+      
+     
+     };
+         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+     
+         chart.draw(data, google.charts.Bar.convertOptions(options));
+       }
+     </script>
+      <style>
+        body {
+         
+            width: 100%;
+            height: 100vh;
+            background-image: url(bg1.jpg);
+            background-size: 100%;
+            background-position: center;
+        }
+     </style>
+    </head>
+    <body style="text-align:center; font-family: 'Prompt', sans-serif;" >
+	<br><br>
+      <h1><b>Welcome to Past Year Sales</b></h1><br><br>
+      <div class="button">
+        <a href="admin.html" class="btn btn-outline-primary">ADMIN HOME</a>
+      </div>
+       
+        <br> <br><h3><br><b>Line Chart</b></h3>
+        <div id="curve_chart" class="chart5" ></div>
+        <h3><br><b>Area Chart</b></h3>
+        <div id="chart_div" class="chart6" ></div>
+        <h3><br><b>Bar Chart</b></h3>
+        <div id="columnchart_material" class="chart4"></div>
+        <h3>The above Visualizations are for Sales of food products in the past years.<br> The insights drawn from them are as :</h3>
+        <h4>Here, Maximum food products were sold in  <b>August 2015</b></h4>
+        <h4>and minimum food products were sold in  <b>March 2014</b></h4>
+        
+        
+    </body>
+</html>

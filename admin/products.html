@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Different Products Sales </title>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['itemDescription', 'Sales'],
+          ['Milk Products',    7542],
+          ['Fruits & Vegetables',      7473],
+          ['Bakery Products',  5632],
+          ['Coffee,Tea & Beverages', 5590],
+          ['Non-vegetarian food products',  2459],
+          ['Basic food products', 1816],
+          ['Snack food Products',  1619],
+          ['Sweet food products', 1028],
+          ['Frozen food products',   948]
+        ]);
+
+        var options = {
+          title: 'Sales of different types of products',
+          fontSize:14,
+          backgroundColor: 'transparent',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+     
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['itemDescription', 'Sales'],
+          ['Milk Products',     7542],
+          ['Fruits & Vegetables',      7473],
+          ['Bakery Products',  5632],
+          ['Coffee,Tea & Beverages', 5590],
+          ['Non-vegetarian food products',  2459],
+          ['Basic food products', 1816],
+          ['Snack food Products',  1619],
+          ['Sweet food products', 1028],
+          ['Frozen food products',   948]
+        ]);
+
+        var options = {
+          title: 'Sales of different types of products',
+          backgroundColor: 'transparent',
+          hAxis: {title: 'Different food products',  titleTextStyle: {color: '#333'}},
+          vAxis: {title: 'Number of food products sold',minValue: 0},
+          fontSize: 14,
+          curveType: 'function',
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['itemDescription', 'Sales'],
+          ['Milk Products',   7542],
+          ['Fruits & Vegetables',      7473],
+          ['Bakery Products',  5632],
+          ['Coffee,Tea & Beverages', 5590],
+          ['Non-vegetarian food products',  2459],
+          ['Basic food products', 1816],
+          ['Snack food Products',  1619],
+          ['Sweet food products', 1028],
+          ['Frozen food products',   948]
+        ]);
+
+        var options = {
+          title: 'Sales of different types of products',
+          fontSize:14,
+          backgroundColor: 'transparent',
+          hAxis: {title: 'Different food products',  titleTextStyle: {color: '#333'}},
+          vAxis: {title: 'Number of food products sold',minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['itemDescription', 'Sales'],
+              ['Milk Products',    7542],
+              ['Fruits & Vegetables',      7473],
+              ['Bakery Products',  5632],
+              ['Coffee,Tea & Beverages', 5590],
+              ['Non-veg food products',  2459],
+              ['Basic food products', 1816],
+              ['Snack food Products',  1619],
+              ['Sweet food products', 1028],
+              ['Frozen food products',   948]
+              
+        ]);
+        var options = {
+            
+            backgroundColor: 'transparent',
+            fontSize: 14,
+       chart: {
+         title: 'Different Food Products Sales',  
+       },
+       'chartArea': {
+        'backgroundColor': {'fill': 'transparent','opacity': 100},
+     }    
+    };
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+    
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <style>
+      body {
+       
+          width: 100%;
+          height: 100vh;
+          background-image: url(bg1.jpg);
+          background-size: cover;
+          background-position: center;
+      }
+   
+      
+      </style>
+    </head>
+    <body style="text-align:center; font-family: 'Prompt', sans-serif;" >
+      
+     
+
+      <br><br><h1><b>Welcome to Different Food Product Sales</b></h1><br><br>
+      <div class="button">
+        <a href="admin.html" class="btn btn-outline-primary">ADMIN HOME</a>
+      </div>
+      <h3><br><b>Pie Chart</b></h3>
+        <div id="piechart_3d" class="chart"></div>
+        
+        <h3><br><b>Line Chart</b></h3>
+     
+        <div id="curve_chart" class="chart1"></div>
+        <h3><br><b>Area Chart</b></h3>
+        <div id="chart_div" class="chart2"></div>
+        <h3><br><b>Bar Chart</b></h3>
+        <div id="columnchart_material" class="chart3"></div><br><br>
+        <b><h4>The above Visualizations are for Sales of different types of food products.<br> The insights drawn from them are as :</h4></b><br>
+        <h5>Here, Maximum sold food products are <b>Milk Products</b> and then are <b>fruits and vegetables.</b></h5>
+        <h5>And coming to least sold products, <b>Frozen Food products </b> were least in terms of sales.</h5><br><br>
+
+     
+        
+        
+    </body>
+</html>
+</html>
